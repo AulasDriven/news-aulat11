@@ -1,4 +1,4 @@
-import { AlterNewsData, CreateNewsData, create, getNewsById, remove, update, getAllNews } from "../repositories/news-repository";
+import { AlterNewsData, CreateNewsData, create, getNewsById, remove, update, getAllNews } from "@/repositories/news-repository";
 
 async function getNews() {
   return getAllNews();

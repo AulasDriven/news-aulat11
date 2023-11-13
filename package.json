@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && tsc-alias",
     "dev": "nodemon src/server.ts",
     "start": "prisma migrate deploy && node dist/src/server.js",
     "test": "dotenv -e .env.test prisma migrate deploy && dotenv -e .env.test jest -- -i",
@@ -25,6 +25,8 @@
     "supertest": "^6.3.3",
     "ts-jest": "^29.1.1",
     "ts-node": "^10.9.1",
+    "tsc-alias": "^1.8.8",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.2.2"
   },
   "dependencies": {
